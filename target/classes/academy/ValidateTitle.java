@@ -31,6 +31,9 @@ public class ValidateTitle extends Base {
 		String title = hp.getTitle().getText();
 		Assert.assertEquals(title, "FEATURED COURSES");
 		log.info("Validated the Title: FEATURED COURSES");
+		
+		//Changes done by Indian guy Manohar
+		System.out.println("Github practice to push the code after some changes in the code pulled from GitHub");
 	}
 
 	@AfterTest
