@@ -19,6 +19,7 @@ import academy.Base;
 public class HomePageTest extends Base {
 
 	public static Logger log = LogManager.getLogger(Base.class.getName());
+
 	@BeforeTest
 	public void LaunchURL() throws IOException {
 
@@ -34,7 +35,9 @@ public class HomePageTest extends Base {
 		HomePage hp = new HomePage(driver);
 		Assert.assertTrue(hp.getNavBar().isDisplayed());
 		log.info("Validated the NavigationBar display");
-
+		System.out.println("This text is to practice on GitHub commands");
+		System.out.println("This text is to practice to commit the code in GitHub ");
+		
 	}
 
 	@Test
