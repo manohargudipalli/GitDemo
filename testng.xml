@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+
+	<listeners>
+		<listener class-name="academy.Listeners"></listener>
+		<listener class-name="academy.ExtentReporterNG"></listener>
+	</listeners>
+	<test name="Validating User Login">
+		<classes>
+
+
+
+
+
+			<class name="academy.LoginPageTest"></class>
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Validating Navigation Bar in Home Page ">
+		<classes>
+			<class name="academy.HomePageTest"></class>
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Validating Title in Home Page">
+		<classes>
+			<class name="academy.ValidateTitle"></class>
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
