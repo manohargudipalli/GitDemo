@@ -39,6 +39,18 @@ public class HomePageTest extends Base {
 		System.out.println("This text is to practice to commit the code in GitHub ");
 		
 	}
+	
+	@Test
+	public void validateNavigationBar2() {
+		HomePage hp = new HomePage(driver);
+		Assert.assertTrue(hp.getNavBar().isDisplayed());
+		log.info("Validated the NavigationBar display");
+		System.out.println("This text is to practice on GitHub commands");
+		System.out.println("This text is to practice to commit the code in GitHub ");
+		
+	}
+	
+	
 
 	@Test
 	public void validateNavigations() {

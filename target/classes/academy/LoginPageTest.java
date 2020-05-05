@@ -38,6 +38,15 @@ public class LoginPageTest extends Base {
 		log.info("Cliked on Login link to open the SignIn/Login Page");
 
 	}
+	@Test
+	public void loginPageNavigation2() throws IOException, InterruptedException {
+
+		HomePage hp = new HomePage(driver);
+		hp.getSignIn().click();
+		Thread.sleep(5000L);
+		log.info("Cliked on Login link to open the SignIn/Login Page");
+
+	}
 
 	@Test(dependsOnMethods = { "loginPageNavigation" })
 	public void loginTest() throws IOException {
